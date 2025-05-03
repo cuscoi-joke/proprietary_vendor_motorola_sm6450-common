@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
@@ -273,6 +274,7 @@ PRODUCT_PACKAGES += \
     liblightninglaunches \
     libllvm-glnext \
     libllvm-qcom \
+    liblmthermallistner \
     liblmutils-ns \
     libloc_api_v02 \
     libloc_api_wds \
@@ -403,6 +405,7 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
+    libthermalclient \
     libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
@@ -656,6 +659,7 @@ PRODUCT_PACKAGES += \
     ssgqmigd \
     ssgtzd \
     tftp_server \
+    thermal-engine-v2 \
     vendor.dpmd \
     vendor.qti.qspmhal@1.0-service \
     xtra-daemon \

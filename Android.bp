@@ -3036,6 +3036,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liblmthermallistner",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblmthermallistner.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libcutils",
+                "libhidlbase",
+                "libutils",
+                "libthermalclient",
+                "android.hardware.thermal@2.0",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liblmutils-ns",
     owner: "motorola",
     strip: {
@@ -7027,6 +7057,32 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libthermalclient",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libthermalclient.so",
+            ],
+            shared_libs: [
+                "libcutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -13998,6 +14054,36 @@ cc_prebuilt_binary {
                 "libqsocket",
                 "libqrtr",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "thermal-engine-v2",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/thermal-engine-v2",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libnl",
+                "libthermalclient",
                 "libc++",
                 "libc",
                 "libm",
