@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     libapengine \
     libappclassifier \
     libbase64 \
+    libbatching \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
@@ -262,6 +263,7 @@ PRODUCT_PACKAGES += \
     libgarden_haltests_e2e \
     libgdtap \
     libgnsspps \
+    libgps.utils \
     libgpudataproducer \
     libgsl \
     libidl \
@@ -279,10 +281,12 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_api_wds \
     libloc_base_util \
+    libloc_core \
     libloc_eng_hub \
     libloc_mq_client \
     libloc_socket \
     libloc_util \
+    liblocation_api \
     liblocationservice \
     liblocationservice_glue \
     liblocdiagiface \
