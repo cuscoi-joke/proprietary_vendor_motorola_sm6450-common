@@ -62,6 +62,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -198,6 +199,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
@@ -262,6 +264,8 @@ PRODUCT_PACKAGES += \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
+    libgeofencing \
+    libgnss \
     libgnsspps \
     libgps.utils \
     libgpudataproducer \
@@ -583,6 +587,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
+    CACertService \
     CneApp \
     IWlanService \
     uimgbaservice \
@@ -611,6 +616,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
+    android.hardware.gnss-aidl-service-qti.xml \
     dataconnection-saidl.xml \
     qtiradio-saidl.xml \
     vendor.qti.gnss-service.xml \
@@ -628,6 +634,7 @@ PRODUCT_PACKAGES += \
     engine-service \
     garden_app \
     android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.gnss-aidl-service-qti \
     qcrilNrd \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf-hal-service \
