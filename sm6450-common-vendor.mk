@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -275,6 +276,9 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libkcl \
     libkernelmanager \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
     liblbs_core \
     liblearningmodule \
     liblightninglaunches \
@@ -383,6 +387,8 @@ PRODUCT_PACKAGES += \
     libqti-perfd \
     libqti-util \
     libqti-utils \
+    libqtikeymaster4 \
+    libqtikeymint \
     librcc \
     libril-db \
     libril-legacy \
@@ -404,6 +410,7 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsnsdiaglog \
     libsoc_helper \
+    libspcom \
     libssc \
     libssc_default_listener \
     libssd \
@@ -617,6 +624,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.security.keymint-service-qti.xml \
     dataconnection-saidl.xml \
     qtiradio-saidl.xml \
     vendor.qti.gnss-service.xml \
@@ -635,6 +643,8 @@ PRODUCT_PACKAGES += \
     garden_app \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.gnss-aidl-service-qti \
+    android.hardware.keymaster@4.0-service-qti \
+    android.hardware.security.keymint-service-qti \
     qcrilNrd \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf-hal-service \
@@ -646,6 +656,7 @@ PRODUCT_PACKAGES += \
     lowi-server \
     mlid \
     modemManager \
+    msm_irqbalance \
     netmgrd \
     pd-mapper \
     pm-proxy \
