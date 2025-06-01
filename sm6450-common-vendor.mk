@@ -263,6 +263,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
+    android.hardware.gnss@2.1-impl-qti \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
