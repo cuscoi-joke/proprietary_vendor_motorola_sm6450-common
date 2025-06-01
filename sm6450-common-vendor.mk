@@ -712,7 +712,7 @@ PRODUCT_PACKAGES += \
     sensors-qesdk \
     sensors.qti \
     sscrpcd \
-    ssgqmigd \
+    ssgqmigd64 \
     ssgtzd \
     tftp_server \
     thermal-engine-v2 \
