@@ -210,7 +210,23 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/firmware/gen6_3_26_0_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/gen6_3_26_0_zap.elf \
     vendor/motorola/sm6450-common/proprietary/vendor/firmware/gen6_3_26_0_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen6_3_26_0_zap.mbn \
     vendor/motorola/sm6450-common/proprietary/vendor/firmware/gen6_3_26_0_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/gen6_3_26_0_zap.mdt \
-    vendor/motorola/sm6450-common/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_4mb.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_4mb_ecdsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_ecdsa.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_4mb_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_unsigned.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_4mb_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_v6.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_4mb_v6_rsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_v6_rsa.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_4mb_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_v7.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_5mb.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_5mb.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_5mb_ecdsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_5mb_ecdsa.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_5mb_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_5mb_unsigned.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_5mb_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_5mb_v6.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_5mb_v6_rsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_5mb_v6_rsa.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_5mb_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_5mb_v7.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_ecdsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_ecdsa.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_v6_rsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6_rsa.mbn \
+    vendor/motorola/sm6450-common/proprietary/vendor/firmware/venus_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v7.mbn
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
