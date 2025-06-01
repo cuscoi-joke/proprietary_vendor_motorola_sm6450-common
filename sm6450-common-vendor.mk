@@ -93,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
@@ -521,6 +522,8 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     libxml \
     libxtadapter \
+    motorola.hardware.camera.desktop@1.0 \
+    motorola.hardware.camera.desktop@2.0 \
     motorola.hardware.sensors-V1-ndk_platform \
     qcrilInterfaces \
     qcrilMarshal \
@@ -764,6 +767,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.security.keymint-service-qti \
+    motorola.hardware.camera.desktop@2.0-service \
     qcrilNrd \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
