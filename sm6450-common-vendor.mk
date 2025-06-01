@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
@@ -109,6 +110,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
@@ -127,6 +130,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/lm/prekill/prekill_2GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_2GB.data \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/media_parrot_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_parrot_v0/video_system_specs.json \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/media_parrot_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_parrot_v1/video_system_specs.json \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/media_parrot_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_parrot_v2/video_system_specs.json \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/media_ravelin/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_ravelin/video_system_specs.json \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/motorola/mdmctbk/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/mdmctbk/ctbk_cfg.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
@@ -191,6 +198,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/modemManager.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/modemManager.policy \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
@@ -269,6 +280,7 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     libCB \
     libDxHdcp \
+    libEvrcSwCodec \
     libFileMux_proprietary \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
@@ -277,6 +289,7 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
+    libQcelp13SwCodec \
     libQtiRilLoadable \
     libadaptlaunch \
     libadreno_app_profiles \
@@ -313,6 +326,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
     libengineplugin \
@@ -373,6 +387,7 @@ PRODUCT_PACKAGES += \
     libminkdescriptor \
     libminksocket_vendor \
     libmm-hdcpmgr \
+    libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
     libmotext_inf \
@@ -403,10 +418,30 @@ PRODUCT_PACKAGES += \
     libprocomp \
     libpsmoptfeature \
     libqapesdk \
+    libqc2audio_base \
+    libqc2audio_basecodec \
+    libqc2audio_core \
+    libqc2audio_hooks \
+    libqc2audio_hwaudiocodec \
+    libqc2audio_platform \
+    libqc2audio_swaudiocodec \
+    libqc2audio_utils \
+    libqc2colorconvertfilter \
+    libqc2filter \
     libqcbor \
     libqcc_file_agent \
     libqcci_legacy \
     libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_filterbase \
+    libqcodec2_hooks \
+    libqcodec2_mockfilter \
+    libqcodec2_mockqc2filter \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
     libqcrilDataModule \
     libqcrilNr \
     libqcrilNrCellInfoModule \
@@ -499,6 +534,8 @@ PRODUCT_PACKAGES += \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
+    libvideotxr \
+    libvideoutils \
     libvmmem \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
@@ -531,6 +568,7 @@ PRODUCT_PACKAGES += \
     qcrilNr_aidl_IQtiRadioConfig \
     qcrild_libqcrilnr \
     qcrild_libqcrilnrutils \
+    qti.video.utils.videobufferlayout \
     qtiPeripheralMgr \
     qtiril-utils \
     qtiwakelock \
@@ -685,6 +723,8 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmosal \
+    libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
     libqspmsvc \
@@ -747,6 +787,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.security.keymint-service-qti.xml \
+    c2_manifest_vendor_audio.xml \
     dataconnection-saidl.xml \
     qtiradio-saidl.xml \
     vendor.qti.gnss-service.xml \
@@ -772,8 +813,11 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf-hal-service \
+    vendor.qti.media.c2@1.0-service \
+    vendor.qti.media.c2audio@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
+    init.qti.media \
     irsc_util \
     ks \
     loc_launcher \
