@@ -788,6 +788,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.security.keymint-service-qti.xml \
     c2_manifest_vendor_audio.xml \
     dataconnection-saidl.xml \
