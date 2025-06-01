@@ -60,6 +60,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU830.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU830.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU860.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU860.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
@@ -79,10 +90,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
@@ -182,7 +195,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
-    vendor.qti.qspmhal@1.0_vendor \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
@@ -235,6 +247,7 @@ PRODUCT_PACKAGES += \
     libadsprpc \
     libapengine \
     libappclassifier \
+    libbacklight-calib \
     libbase64 \
     libbatching \
     libbluetooth_audio_session_qti \
@@ -248,12 +261,17 @@ PRODUCT_PACKAGES += \
     libcdsprpc \
     libcne \
     libcneapiclient \
+    libcolor-default \
     libconfigdb \
     libcpion \
     libdataitems \
     libdiag \
+    libdigital-dimming \
+    libdisp-aba \
+    libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
+    libdpps \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
@@ -272,6 +290,9 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     libgpudataproducer \
     libgsl \
+    libhdr_backlight_adapter \
+    libhdr_stub \
+    libhdr_tm \
     libidl \
     libizat_client_api \
     libizat_core \
@@ -307,6 +328,7 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libmemperfd \
+    libmemutils \
     libmeters-ns \
     libmeters \
     libminkdescriptor \
@@ -358,6 +380,9 @@ PRODUCT_PACKAGES += \
     libqcrildataaidl \
     libqcrildatactl \
     libqcrildataqos \
+    libqdcm-algo \
+    libqdcm-json-mode-parser \
+    libqdcm-mode-parser \
     libqdi \
     libqdma_file_agent \
     libqdp \
@@ -391,6 +416,7 @@ PRODUCT_PACKAGES += \
     libqtikeymaster4 \
     libqtikeymint \
     librcc \
+    librcmask \
     libril-db \
     libril-legacy \
     libril-qc-ltedirectdisc \
@@ -398,7 +424,9 @@ PRODUCT_PACKAGES += \
     librilqmimiscservices \
     librpmb \
     libsdm-color \
+    libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmextension \
     libsdsprpc \
     libsensorcal \
     libsensorslog \
@@ -406,6 +434,8 @@ PRODUCT_PACKAGES += \
     libsilkyscrolls \
     libskewknob \
     libslimclient \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsnsapi \
@@ -421,6 +451,7 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
+    libtestutils \
     libthermalclient \
     libtime_genoff \
     libtinyxml2_1 \
@@ -575,6 +606,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdsys-V1-ndk_platform \
     vendor.qti.qspmhal@1.0-impl \
+    vendor.qti.qspmhal@1.0_vendor \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -647,6 +679,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.security.keymint-service-qti \
     qcrilNrd \
+    vendor.display.color@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf-hal-service \
     ims_rtp_daemon \
@@ -664,7 +697,9 @@ PRODUCT_PACKAGES += \
     pm-service \
     port-bridge \
     poweropt-service \
+    ppd \
     qcom-system-daemon \
+    qdcmss \
     qesdk-manager \
     qmi_motext_hook \
     qmipriod \
