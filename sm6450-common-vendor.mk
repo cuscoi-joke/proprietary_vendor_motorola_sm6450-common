@@ -346,6 +346,7 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libembmsservice \
     libengineplugin \
+    libeva \
     libfastcvdsp_stub \
     libfastcvopt \
     libgame_enhance \
@@ -517,6 +518,11 @@ PRODUCT_PACKAGES += \
     libril-qc-radioconfig \
     librilqmimiscservices \
     librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
