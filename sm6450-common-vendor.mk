@@ -332,6 +332,8 @@ PRODUCT_PACKAGES += \
     libcolor-default \
     libconfigdb \
     libcpion \
+    libcv_common \
+    libcvp2_1 \
     libdataitems \
     libdiag \
     libdigital-dimming \
