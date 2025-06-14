@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/init/qspmsvc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspmsvc.rc \
+    vendor/motorola/sm6450-common/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
@@ -280,6 +281,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
+    vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.wifidisplaysession@1.0-impl \
     vulkan.adreno \
@@ -362,6 +364,7 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpudataproducer \
+    libgrpc++_unsecure_prebuilt \
     libgsl \
     libhdr_backlight_adapter \
     libhdr_stub \
@@ -669,8 +672,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.power.powermodule@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.1 \
+    vendor.qti.hardware.qccsyshal@1.0_vendor \
+    vendor.qti.hardware.qccsyshal@1.1_vendor \
+    vendor.qti.hardware.qccvndhal@1.0-halimpl \
+    vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
@@ -779,6 +784,7 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
+    libqcc_file_agent_sys \
     libqspmsvc \
     libwfdavenhancements \
     libwfdclient \
@@ -800,6 +806,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qccsyshal@1.1 \
+    vendor.qti.hardware.qccsyshal@1.2-halimpl \
+    vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
@@ -918,6 +928,7 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     dpmd \
+    qccsyshal@1.2-service \
     qspmsvc \
     wfdservice64
 
