@@ -1884,6 +1884,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libadspd",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadspd.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libadsprpc",
     owner: "motorola",
     strip: {
@@ -3876,6 +3903,32 @@ cc_prebuilt_library_shared {
                 "libqti-iopd",
                 "libqti-perfd",
                 "libqti-iopd-client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libloadalgo_stub",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libloadalgo_stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "libvmmem",
                 "libc++",
                 "libc",
                 "libm",
@@ -14665,6 +14718,195 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+prebuilt_rfsa {
+    name: "bm2n31",
+    filename: "bm2n31.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n31.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n32",
+    filename: "bm2n32.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n32.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n33",
+    filename: "bm2n33.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n33.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n34",
+    filename: "bm2n34.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n34.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n35",
+    filename: "bm2n35.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n35.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n36",
+    filename: "bm2n36.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n36.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n37",
+    filename: "bm2n37.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n37.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n54",
+    filename: "bm2n54.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n54.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n55",
+    filename: "bm2n55.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n55.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "bm2n56",
+    filename: "bm2n56.bin",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/bm2n56.bin",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libSnpeHtpV68Skel",
+    filename: "libSnpeHtpV68Skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libSnpeHtpV69Skel",
+    filename: "libSnpeHtpV69Skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libSuperSensor_skel",
+    filename: "libSuperSensor_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSuperSensor_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libcalculator_skel",
+    filename: "libcalculator_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libcalculator_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libdspCV_skel",
+    filename: "libdspCV_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libdsp_streamer_binning",
+    filename: "libdsp_streamer_binning.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libfastcvadsp",
+    filename: "libfastcvadsp.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libfastcvdsp_skel",
+    filename: "libfastcvdsp_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libscveT2T_skel",
+    filename: "libscveT2T_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libsw2dlut_dsp_skel",
+    filename: "libsw2dlut_dsp_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libsw2dlut_dsp_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libworker_pool",
+    filename: "libworker_pool.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libworker_pool.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.dpm.api@1.0",
     owner: "motorola",
@@ -17411,6 +17653,36 @@ cc_prebuilt_binary {
                 "libutils",
                 "liblog",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "loadalgo",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/loadalgo",
+            ],
+            shared_libs: [
+                "libutils",
+                "libQSEEComAPI",
+                "libdmabufheap",
+                "libloadalgo_stub",
+                "liblog",
+                "libvmmem",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],

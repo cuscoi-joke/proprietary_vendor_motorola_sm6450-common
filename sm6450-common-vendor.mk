@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
@@ -307,6 +308,7 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadropbox \
     libadsp_default_listener \
+    libadspd \
     libadsprpc \
     libapengine \
     libappclassifier \
@@ -373,6 +375,7 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     liblmthermallistner \
     liblmutils-ns \
+    libloadalgo_stub \
     libloc_api_v02 \
     libloc_api_wds \
     libloc_base_util \
@@ -727,6 +730,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdsys-V1-ndk_platform \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0_vendor \
+    bm2n31 \
+    bm2n32 \
+    bm2n33 \
+    bm2n34 \
+    bm2n35 \
+    bm2n36 \
+    bm2n37 \
+    bm2n54 \
+    bm2n55 \
+    bm2n56 \
+    libSnpeHtpV68Skel \
+    libSnpeHtpV69Skel \
+    libSuperSensor_skel \
+    libcalculator_skel \
+    libdspCV_skel \
+    libdsp_streamer_binning \
+    libfastcvadsp \
+    libfastcvdsp_skel \
+    libscveT2T_skel \
+    libsw2dlut_dsp_skel \
+    libworker_pool \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -841,6 +865,7 @@ PRODUCT_PACKAGES += \
     init.qti.media \
     irsc_util \
     ks \
+    loadalgo \
     loc_launcher \
     lowi-server \
     mlid \
