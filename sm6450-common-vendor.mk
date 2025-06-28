@@ -144,6 +144,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/media_parrot_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_parrot_v2/video_system_specs.json \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/media_ravelin/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_ravelin/video_system_specs.json \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/motorola/mdmctbk/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/mdmctbk/ctbk_cfg.xml \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/motorola/qcom_gps_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/qcom_gps_license.pfm \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
