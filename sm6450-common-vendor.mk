@@ -30,6 +30,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/motorola/sm6450-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/ap_gain.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain.bin \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -143,6 +145,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/media_parrot_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_parrot_v1/video_system_specs.json \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/media_parrot_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_parrot_v2/video_system_specs.json \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/media_ravelin/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_ravelin/video_system_specs.json \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/motorola/mdmctbk/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/mdmctbk/ctbk_cfg.xml \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/motorola/qcom_gps_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/qcom_gps_license.pfm \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
@@ -280,6 +285,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
+    audio.bluetooth_qti.default \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
@@ -314,6 +320,7 @@ PRODUCT_PACKAGES += \
     libQcelp13SwCodec \
     libQtiRilLoadable \
     libadaptlaunch \
+    libadm \
     libadreno_app_profiles \
     libadreno_utils \
     libadropbox \
@@ -322,6 +329,8 @@ PRODUCT_PACKAGES += \
     libadsprpc \
     libapengine \
     libappclassifier \
+    libaualgo_foundation \
+    libaudio_log_utils \
     libbacklight-calib \
     libbase64 \
     libbatching \
@@ -341,6 +350,7 @@ PRODUCT_PACKAGES += \
     libcpion \
     libcv_common \
     libcvp2_1 \
+    libdapparamstorage \
     libdataitems \
     libdiag \
     libdigital-dimming \
@@ -406,6 +416,7 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_common \
     liblowi_wifihal \
+    libmcs \
     libmdmcutback \
     libmdmdetect \
     libmdsprpc \
@@ -519,6 +530,7 @@ PRODUCT_PACKAGES += \
     libqti-perfd \
     libqti-util \
     libqti-utils \
+    libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
     librcc \
