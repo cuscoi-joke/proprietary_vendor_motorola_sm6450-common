@@ -406,6 +406,7 @@ PRODUCT_PACKAGES += \
     libloc_core \
     libloc_eng_hub \
     libloc_mq_client \
+    libloc_qwes_iface \
     libloc_socket \
     libloc_util \
     liblocation_api \
