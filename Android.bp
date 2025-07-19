@@ -17238,6 +17238,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.qti.diag.hal.service.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.qti.gnss-service.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml",
@@ -17451,6 +17460,40 @@ cc_prebuilt_binary {
                 "libcld80211",
                 "libperipheral_client",
                 "libmdmdetect",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "diag-router",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/diag-router",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libqsocket",
+                "libqrtr",
+                "liblog",
+                "vendor.qti.diaghal@1.0_vendor",
+                "libhidlmemory",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -18285,6 +18328,33 @@ sh_binary {
     owner: "motorola",
     src: "proprietary/vendor/bin/init.qti.media.sh",
     filename: "init.qti.media.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "ipacm-diag",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/ipacm-diag",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 

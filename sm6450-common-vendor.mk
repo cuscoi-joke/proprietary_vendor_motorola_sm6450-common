@@ -100,6 +100,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
@@ -116,6 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
+    vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/motorola/sm6450-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
@@ -867,6 +869,7 @@ PRODUCT_PACKAGES += \
     dataconnection-saidl.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     qtiradio-saidl.xml \
+    vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.perf.xml \
     vendor.qti.hardware.power.powermodule.xml \
@@ -877,6 +880,7 @@ PRODUCT_PACKAGES += \
     cdsprpcd \
     cnd \
     cnss-daemon \
+    diag-router \
     dpmQmiMgr \
     dspservice \
     edgnss-daemon \
@@ -901,6 +905,7 @@ PRODUCT_PACKAGES += \
     ims_rtp_daemon \
     imsdaemon \
     init.qti.media \
+    ipacm-diag \
     irsc_util \
     ks \
     loadalgo \
