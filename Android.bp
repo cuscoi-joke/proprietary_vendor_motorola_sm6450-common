@@ -15457,6 +15457,15 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+    name: "libhme_dsp_skel",
+    filename: "libhme_dsp_skel.so",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/rfsa/adsp/libhme_dsp_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
     name: "libscveT2T_skel",
     filename: "libscveT2T_skel.so",
     owner: "motorola",

@@ -781,6 +781,7 @@ PRODUCT_PACKAGES += \
     libdsp_streamer_binning \
     libfastcvadsp \
     libfastcvdsp_skel \
+    libhme_dsp_skel \
     libscveT2T_skel \
     libsw2dlut_dsp_skel \
     libworker_pool \
