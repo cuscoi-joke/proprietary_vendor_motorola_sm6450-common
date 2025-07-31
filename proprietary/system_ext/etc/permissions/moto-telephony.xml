@@ -16,6 +16,6 @@
 <permissions>
     <library
         name="moto-telephony"
-        file="/system/framework/moto-telephony.jar"
+        file="/system_ext/framework/moto-telephony.jar"
     />
 </permissions>
