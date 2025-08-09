@@ -582,13 +582,13 @@
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
                 Id="0x00001098" Type="0" Enable="true" Timeout="2000"
-                Resources="0x4281C000, 32, 0x41C0C000, 0" />
+                Resources="0x42834000, 1, 0x41C0C000, 0" />
 
     <!-- PiCard Early Wakeup GPU only -->
         <!-- GPU DISABLE resource opcode, value-->
         <Config
                 Id="0x00001099" Type="0" Enable="true" Timeout="2000"
-                Resources="0x4281C000, 32" />
+                Resources="0x42834000, 1" />
 
     <!-- PiCard Early Wakeup Display only -->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
